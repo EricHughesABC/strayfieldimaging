@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= Service
+$$ 2015-05-27 14:21:56.232 +0100  Service@fellbarrow
+$$ /home/Service/data/bdat06/eeh_20150527_imaging/24/pdata/1/outd
+$$ process /opt/topspin3.2/prog/au/bin/iexpno
+##$CURPLOT= <printer.qtp>
+##$CURPRIN= <$printer.qtp>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/1D_H.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

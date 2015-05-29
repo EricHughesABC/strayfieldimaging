@@ -1,0 +1,62 @@
+# Wed May 27 14:25:10 2015
+#$$PROBEID=39
+#$$PROBEINFO=4 mm MAS BB/1H H13777/0003
+#$$PICSINFO=H13777_0003_39.par
+#$$SHIMID=312532
+#
+# Active Shim Gradients
+#
+Z           		-180000         
+Z2          		0               
+Z3          		0               
+Z4          		0               
+Z5          		0               
+X           		-12000          
+XZ          		0               
+XZ2         		0               
+Y           		0               
+YZ          		0               
+YZ2         		-5000           
+XY          		0               
+XYZ         		1601            
+(X2-Y2)     		0               
+(X2-Y2)Z    		0               
+X3          		0               
+Y3          		0               
+#
+# Lock Parameter
+#
+FIELD		6459.798
+LOCKPHASE		18.000  
+LOCKPOWER		-22.300 
+LOCKGAIN		111.000 
+LOCKDC		-75.000 
+LOCKSHIFT		4.700   
+LOOPGAIN		5.000   
+LOOPTIME		0.250   
+LOOPFILTER		500.000 
+#
+IEEE64_VERSION_CODE 1
+#
+# Shim currents 
+#
+SHIM_SETTING [1 ]  -87300.00000000 
+SHIM_SETTING [2 ]  -0.00000000     
+SHIM_SETTING [3 ]  -0.00000000     
+SHIM_SETTING [4 ]  -0.00000000     
+SHIM_SETTING [5 ]  0.00000000      
+SHIM_SETTING [6 ]  -6312.00000000  
+SHIM_SETTING [7 ]  0.00000000      
+SHIM_SETTING [8 ]  0.00000000      
+SHIM_SETTING [9 ]  -0.00000000     
+SHIM_SETTING [10]  0.00000000      
+SHIM_SETTING [11]  -0.00000000     
+SHIM_SETTING [12]  0.00000000      
+SHIM_SETTING [13]  -2630.00000000  
+SHIM_SETTING [14]  0.00000000      
+SHIM_SETTING [15]  0.00000000      
+SHIM_SETTING [16]  0.00000000      
+SHIM_SETTING [17]  0.00000000      
+SHIM_SETTING [18]  842.12600000    
+SHIM_SETTING [19]  0.00000000      
+SHIM_SETTING [20]  0.00000000      
