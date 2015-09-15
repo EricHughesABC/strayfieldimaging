@@ -1,0 +1,73 @@
+
+Current Data Parameters
+NAME     eeh_20150710_4mmHXG_MAT              
+EXPNO               202              
+PROCNO                1              
+
+F2 - Acquisition Parameters
+Date_          20150710              
+PROBHD   4 mm MAS BB/1H              
+PULPROG  mat_STE_synch4_16apr15_1.eh              
+NS                   32              
+SWH           10000.000 Hz           
+AQ            0.0512000 sec          
+TE                298.0 K            
+CNST20        1.0000000              
+CNST21      256.0000000              
+D0       0 sec          
+D1           1.00000000 sec          
+D5           1.00000000 sec          
+D6           0.01282051 sec          
+D7           0.00005002 sec          
+D8        6664.10791016 sec          
+D9       0 sec          
+D12          0.00000100 sec          
+D15          0.00099600 sec          
+D16          0.00100000 sec          
+D18      0 sec          
+D19      0 sec          
+D20      0 sec          
+D31          0.03846154 sec          
+IN0      0 sec          
+L4                    1              
+P2                10.40 usec         
+VDLIST   CS_Rarray32_64              
+
+======== CHANNEL f1 ========
+SFO1        400.1710243 MHz          
+NUC1                 1H              
+P1                 5.20 usec         
+PLW1        50.00000000 W            
+
+====== GRADIENT CHANNEL =====
+GPNAM[6]     SMSQ10.100              
+GPNAM[7]     SMSQ10.100              
+GPZ6               2.00 %            
+GPZ7             -13.70 %            
+P19             1000.00 usec         
+P30             2500.00 usec         
+
+F1 - Acquisition parameters
+TD                   64              
+SFO1            400.171 MHz          
+FIDRES       104.027962 Hz           
+SW               16.637 ppm          
+FnMODE        undefined              
+
+F2 - Processing parameters
+SI                 1024              
+SF          400.1700036 MHz          
+WDW                  EM              
+SSB      0              
+LB                 1.00 Hz           
+GB       0              
+PC                 1.00              
+
+F1 - Processing parameters
+SI                  256              
+MC2                  QF              
+SF          400.1700108 MHz          
+WDW                SINE              
+SSB      0              
+LB       0 Hz           
+GB       0              

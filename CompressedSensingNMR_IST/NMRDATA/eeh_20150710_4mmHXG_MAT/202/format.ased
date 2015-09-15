@@ -1,0 +1,378 @@
+#*******************************************************************
+#
+# $Source: /sc/CvsTree/sc/gen/src/form/ased_acqu.form,v $
+#
+# Copyright (c) 1995 - 2008
+# BRUKER BioSpin GmbH
+# D-76287 Rheinstetten, Germany
+#
+# All Rights Reserved
+#
+#
+# $Id: ased_acqu.form,v 1.18.2.1 2011/02/25 13:20:57 es Exp $
+#*******************************************************************
+EDIT_PAR COMMAND FILE
+
+DI_MODE         LONG
+ED_ENTRY        ACQU
+ORDER           FILE
+
+
+HEADER		"====== General ======"
+NAME		PULPROG
+END
+NAME		TD
+END
+NAME		SW
+END
+T_NAME		SWH
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"SWH=SW*SFO1"
+		INV_REL "SW=SWH/SFO1"
+		UNIT	"Hz"
+		FORMAT	"%14.2f Hz"
+		TEXT	"sweep width"
+END
+T_NAME          AQ
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"AQ=aqcalc(SW,SFO1,TD,DIGTYP)"
+		INV_REL	"TD=tdcalc(SW,SFO1,1.0e6*AQ,DIGTYP)"
+		UNIT	"sec"
+		FORMAT	"%14.7f sec"
+                TEXT	"acquisition time"
+END
+NAME		RG
+END
+T_NAME          DW
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"DW=1/(2*SW*SFO1)"
+		INV_REL	"SW=1000000/(2*(0.005+DW)*SFO1)"
+		UNIT	"usec"
+		FORMAT	"%14.3f usec"
+		TEXT	"dwell time "
+END
+NAME		DE
+		FORMAT	"%14.2f usec"
+END
+T_NAME		CNST20
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE -1e38 1e38
+		REL	"CNST20=CNST[20]"
+		INV_REL	"CNST[20]=CNST20"
+		FORMAT	"%14.7f"
+		TEXT		"num rotor periods >= 1"
+END
+T_NAME		CNST21
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE -1e38 1e38
+		REL	"CNST21=CNST[21]"
+		INV_REL	"CNST[21]=CNST21"
+		FORMAT	"%14.7f"
+		TEXT		"n*td1 where  >= 1"
+END
+T_NAME		D0
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D0=D[0]"
+		INV_REL	"D[0]=D0"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT		"= in0*vd_list   --- incremented T1 delay (2D)"
+END
+T_NAME		D1
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D1=D[1]"
+		INV_REL	"D[1]=D1"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT		"relaxation delay; 1-5 * T1"
+END
+T_NAME		D5
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D5=D[5]"
+		INV_REL	"D[5]=D5"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT	"delay 5"
+END
+T_NAME		d6
+		TYPE	R32
+		SUBRANGE 0.0 1e8
+		CLASS	ACQU
+		REL	"d6=cnst20*d31/3.0"
+		INV_REL	"D[0]=d6"
+		UNIT	"sec"
+		TEXT		"= cnst20/(cnst31*3.) --- 1/3 or a rotor period"
+		FORMAT	"%14.8f sec"
+		NONEDIT
+END
+T_NAME		d7
+		TYPE	R32
+		SUBRANGE 0.0 1e8
+		CLASS	ACQU
+		REL	"d7=(d6-3*p1)/cnst21"
+		INV_REL	"D[0]=d7"
+		UNIT	"sec"
+		TEXT		"= (d6-3*p1)/cnst21   --- t1 dewll time"
+		FORMAT	"%14.8f sec"
+		NONEDIT
+END
+T_NAME		d8
+		TYPE	R32
+		SUBRANGE 0.0 1e8
+		CLASS	ACQU
+		REL	"d8= (1./d7)/3."
+		INV_REL	"D[0]=d8"
+		UNIT	"sec"
+		TEXT		"= (1./d7)/3.          --- swh in F1 dimension"
+		FORMAT	"%14.8f sec"
+		NONEDIT
+END
+T_NAME		D9
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D9=D[9]"
+		INV_REL	"D[9]=D9"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT	"delay 9"
+END
+T_NAME		d12
+		TYPE	R32
+		SUBRANGE 0.0 1e8
+		CLASS	ACQU
+		REL	"d12=1u"
+		INV_REL	"D[0]=d12"
+		UNIT	"sec"
+		TEXT		"delay for power switching"
+		FORMAT	"%14.8f sec"
+		NONEDIT
+END
+T_NAME		d15
+		TYPE	R32
+		SUBRANGE 0.0 1e8
+		CLASS	ACQU
+		REL	"d15=d16-4u"
+		INV_REL	"D[0]=d15"
+		UNIT	"sec"
+		TEXT		"= d16-4u  --- delay for grad ring down - 4us for grad blanking"
+		FORMAT	"%14.8f sec"
+		NONEDIT
+END
+T_NAME		D16
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D16=D[16]"
+		INV_REL	"D[16]=D16"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT		"delay for grad ring down"
+END
+T_NAME		D18
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D18=D[18]"
+		INV_REL	"D[18]=D18"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT		"= l4*d31+d31-2*d16-2*p1-p30-p19      --- remainder of 1 rotor period +l4*(rotor_period) to sync gradient pulse sequence"
+END
+T_NAME		D19
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D19=D[19]"
+		INV_REL	"D[19]=D19"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT		"= d6-2*p1-in0*vd_list-3*d12 --- remainder of 1/3 rotor period during MAT sequence"
+END
+T_NAME		D20
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D20=D[20]"
+		INV_REL	"D[20]=D20"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT	"delay 20"
+END
+T_NAME		D31
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D31=D[31]"
+		INV_REL	"D[31]=D31"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT		"calculated time for 1 rotor period taken from measurement"
+END
+T_NAME		DELTA1
+		TYPE	R32
+		SUBRANGE 0.0 1e8
+		CLASS	ACQU
+		REL	"DELTA1=l4*d31+d31-p30"
+		INV_REL	"D[0]=DELTA1"
+		UNIT	"sec"
+		TEXT	"DELTA1=l4*d31+d31-p30"
+		FORMAT	"%14.8f sec"
+		NONEDIT
+END
+NAME		DS
+		TEXT		"16"
+END
+T_NAME		IN0
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"IN0=IN[0]"
+		INV_REL	"IN[0]=IN0"
+		UNIT	"sec"
+		FORMAT	"%14.8f sec"
+		TEXT		"(d6-3*p1)/td1 t1 dwell time"
+END
+T_NAME		L4
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"L4=L[4]"
+		INV_REL	"L[4]=L4"
+		FORMAT	"%14.0f"
+		TEXT	"loop counter 4"
+END
+NAME		NS
+		TEXT		"8 * n"
+END
+T_NAME		p2
+		TYPE	R32
+		SUBRANGE -1e38 1e38
+		CLASS	ACQU
+		REL	"p2=p1*2"
+		INV_REL	"D[0]=p2"
+		UNIT	"usec"
+		TEXT	"p2=p1*2"
+		FORMAT	"%14.2f usec"
+		NONEDIT
+END
+NAME		VDLIST
+		TEXT	"variable delay list"
+END
+NAME		ZGOPTNS
+		TEXT 	"options for zg"
+END
+HEADER		"======== CHANNEL f1 ========"
+NAME		SFO1
+		FORMAT	"%14.7f MHz"
+		TEXT	"frequency of ch. 1"
+END
+NAME		O1
+		FORMAT	"%14.2f Hz"
+		TEXT	"frequency of ch. 1"
+END
+T_NAME		O1P
+		TYPE	R64
+		CLASS	ACQU
+		SUBRANGE -1e38 1e38
+		REL	"O1P=O1/BF1"
+		INV_REL	"O1=O1P*BF1"
+		UNIT	"ppm"
+		FORMAT	"%14.3f ppm"
+		TEXT	"frequency of ch. 1"
+END
+NAME		NUC1
+		NONEDIT
+		TEXT	"nucleus for channel 1"
+END
+T_NAME		P1
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1.0e10
+		REL	"P1=P[1]"
+		INV_REL	"P[1]=P1"
+		UNIT	"usec"
+		FORMAT	"%14.2f usec"
+		TEXT		"f1 channel -  90 degree high power pulse"
+END
+T_NAME		PLW1
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0 100
+		REL	"PLW1=PLW[1]"
+		INV_REL	"PLW[1]=PLW1"
+		UNIT	"W"
+		FORMAT	"%14.5g W"
+		TEXT		"f1 channel - power level for pulse (default)"
+END
+T_NAME		PLdB1
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE -20.1 1000
+		REL	"if(PLW[1]>0)PLdB1=-10*log(PLW[1])/LN10;else PLdB1=1000;"
+		INV_REL	"PLW[1]=0;if(PLdB1<1000)PLW[1]=pow(10.0,(-PLdB1)/10.0)"
+		UNIT	"dB"
+		FORMAT	"%14.2f -dBW"
+		TEXT	"power PL1 in -dBW"
+END
+HEADER		"====== GRADIENT CHANNEL ====="
+NAME		GPNAM[6]
+		TEXT	"file name for gp6 "
+END
+NAME		GPNAM[7]
+		TEXT	"file name for gp7 "
+END
+T_NAME		GPZ6
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE -100.0 100.0
+		REL	"GPZ6=GPZ[6]"
+		INV_REL	"GPZ[6]=GPZ6"
+		UNIT	"%"
+		FORMAT	"%14.2f %"
+		TEXT	"z-gradient strength 6"
+END
+T_NAME		GPZ7
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE -100.0 100.0
+		REL	"GPZ7=GPZ[7]"
+		INV_REL	"GPZ[7]=GPZ7"
+		UNIT	"%"
+		FORMAT	"%14.2f %"
+		TEXT	"z-gradient strength 7"
+END
+T_NAME		P19
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1.0e10
+		REL	"P19=P[19]"
+		INV_REL	"P[19]=P19"
+		UNIT	"usec"
+		FORMAT	"%14.2f usec"
+		TEXT	"pulse 19"
+END
+T_NAME		P30
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1.0e10
+		REL	"P30=P[30]"
+		INV_REL	"P[30]=P30"
+		UNIT	"usec"
+		FORMAT	"%14.2f usec"
+		TEXT	"pulse 30"
+END

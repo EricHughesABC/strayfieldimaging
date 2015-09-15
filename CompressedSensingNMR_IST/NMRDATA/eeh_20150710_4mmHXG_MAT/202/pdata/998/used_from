@@ -1,0 +1,18 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= flph74
+$$ 2015-08-24 15:18:46.619 +0100  CHEMISTRY\flph74@Graystones
+$$ Y:/SSNMR/Backup/Avance/bdat06/eeh_20150710_4mmHXG_MAT/202/pdata/998/used_from
+$$ process C:\Bruker\TopSpin3.2\prog\mod\mvrow.exe
+##$CUREXP= <column>
+##$DATPATH= <Y:/SSNMR/Backup/Avance/bdat06>
+##$DETAILS= <positive projection of all 1024 columns>
+##$EXPNO= 202
+##$NAME= <eeh_20150710_4mmHXG_MAT>
+##$PROCNO= 1
+##$PROCNO2= 1
+##$PROCNO3= 1024
+##END=

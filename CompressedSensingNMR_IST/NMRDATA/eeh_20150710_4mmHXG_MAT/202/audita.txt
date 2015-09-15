@@ -1,0 +1,18 @@
+##TITLE= Audit trail, TOPSPIN		Version 3.2
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= Service
+$$ /home/Service/data/bdat06/eeh_20150710_4mmHXG_MAT/202/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2015-07-10 12:59:35.569 +0100>,<Service>,<fellbarrow>,<go>,<TOPSPIN 3.2>,
+      <created by zg
+	started at 2015-07-10 11:37:00.987 +0100,
+	POWCHK disabled, PULCHK disabled,
+       configuration hash MD5:
+       27 73 C1 BE 42 46 72 28 42 EB 2E AF 7C 90 CA 22
+       data hash MD5: 1K * 64
+       F6 71 B4 9B 3C A5 13 A1 9F 1D 47 97 4F CD A6 F5>)
+##END=
+
+$$ hash MD5
+$$ 9A AF 7D 98 76 0F 7B E8 C8 19 56 9E 96 F8 66 A0

@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= flph74
+$$ 2015-08-24 15:18:27.930 +0100  CHEMISTRY\flph74@Graystones
+$$ Y:/SSNMR/Backup/Avance/bdat06/eeh_20150710_4mmHXG_MAT/202/pdata/999/outd
+$$ process C:\Bruker\TopSpin3.2\prog\mod\mvrow.exe
+##$CURPLOT= <printer.qtp>
+##$CURPRIN= <$printer.qtp>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/1D_H.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

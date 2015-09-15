@@ -1,0 +1,22 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 65	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= Service
+$$ 2015-07-10 12:59:35.280 +0100  Service@fellbarrow
+$$ /home/Service/data/bdat06/eeh_20150710_4mmHXG_MAT/202/acqu2s
+$$ process /opt/topspin3.2/prog/mod/go
+##$ACQT0= 0
+##$BF1= 400.17
+##$FnMODE= 0
+##$NUC1= <1H>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 64
+##$O1= 1024.29
+##$SFO1= 400.17102429
+##$SW= 16.6373605526805
+##$SW_h= 6657.7896138482
+##$TD= 64
+##END=
