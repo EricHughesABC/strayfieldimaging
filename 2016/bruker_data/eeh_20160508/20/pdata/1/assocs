@@ -1,0 +1,11 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= flph74
+$$ 2016-09-30 14:18:59.443 +0100  CHEMISTRY\flph74@Graystones
+$$ V:/Backup/Avance/bdat08/eeh_20160508/20/pdata/1/assocs
+$$ process C:\Bruker\TopSpin3.2\prog\mod\dirdata.exe
+##$MULTDISP= </home/Service/data/bdat08/eeh_20160508/12/pdata/1>
+##END=

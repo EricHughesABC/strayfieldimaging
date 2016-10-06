@@ -1,0 +1,22 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= flph74
+$$ 2016-09-30 14:18:59.093 +0100  CHEMISTRY\flph74@Graystones
+$$ V:/Backup/Avance/bdat08/eeh_20160508/20/acqu2
+$$ process C:\Bruker\TopSpin3.2\prog\mod\dirdata.exe
+##$ACQT0= 0
+##$BF1= 130.937441
+##$FnMODE= 4
+##$NUC1= <87Rb>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 0
+##$O1= -2999.9999999859
+##$SFO1= 130.934441
+##$SW= 76.3740993097454
+##$SW_h= 10000
+##$TD= 300
+##END=

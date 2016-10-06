@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= Service
+$$ 2015-10-07 17:36:22.304 +0100  Service@fellbarrow
+$$ /home/Service/data/bdat06/eeh_20151007_biaxial_2H/24/pdata/1/outd
+$$ process /opt/topspin3.2/prog/au/bin/iexpno
+##$CURPLOT= <HP LaserJet 5000 Series PCL6>
+##$CURPRIN= <$HP LaserJet 5000 Series PCL6>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/2D_inv.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

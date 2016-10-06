@@ -1,0 +1,27 @@
+##TITLE= Audit trail, TOPSPIN		Version 3.2
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= flph74
+$$ V:/Backup/Avance/bdat08/eeh_20160508/20/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2016-05-09 06:15:54.932 +0100>,<Service>,<fellbarrow>,<go>,<TOPSPIN 3.2>,
+      <created by zg
+	started at 2016-05-08 19:47:47.254 +0100,
+	POWCHK disabled, PULCHK disabled,
+       configuration hash MD5:
+       AA D1 25 B4 5B FC 74 E7 64 A8 69 08 34 AE 8E 6A
+       data hash MD5: 1K * 300
+       3B D4 04 EA 16 4F 61 65 29 90 44 52 E7 C2 50 0C>)
+(   2,<2016-09-30 14:16:35.712 +0100>,<Service>,<fellbarrow>,<proc2d>,<TOPSPIN 3.2>,
+      <Start of raw data processing
+       xfb F2: SI = 1K WDW = 1 LB = 50 FT_mod = 6 PKNL = 1 PHC0 = 57.9 PHC1 = 0 F1: SI = 1K ME_mod = 2 NCOEF = 32 LPBIN = 256 WDW = 3 SSB = 2 FT_mod = 6 PHC0 = 2.2 PHC1 = 0
+       data hash MD5: 1K * 1K
+       51 CB 00 4A 3F 10 1D BD A3 55 63 E7 AB 7E 46 2D>)
+(   3,<2016-09-30 14:19:00.424 +0100>,<CHEMISTRY\flph74>,<Graystones>,<dirdata>,<TOPSPIN 3.2>,
+      <wrpa from 1 10 "eeh_20160508" "V:\Backup\Avance\bdat08"
+       data hash MD5: 1K * 1K
+       51 CB 00 4A 3F 10 1D BD A3 55 63 E7 AB 7E 46 2D>)
+##END=
+
+$$ hash MD5
+$$ 0C CE 7D EC 91 7B C1 C6 09 86 84 E8 2E 1C 75 50

@@ -1,0 +1,15 @@
+##TITLE= Audit trail, TOPSPIN		Version 3.2
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= flph74
+$$ V:/Backup/Avance/bdat07/eeh_20160324_1_4mmHXG_50umBeads/103/pdata/998/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2016-06-21 15:23:39.566 +0100>,<CHEMISTRY\flph74>,<Graystones>,<mvrow>,<TOPSPIN 3.2>,
+      <rsc 25 from
+       1 103 "eeh_20160324_1_4mmHXG_50umBeads" "V:/Backup/Avance/bdat07"
+       data hash MD5: 512
+       09 BD FE 99 36 EF 1A AF D6 D7 76 10 1D C6 9B 52>)
+##END=
+
+$$ hash MD5
+$$ 10 0F D1 5E 63 0C F4 81 AA F2 54 B6 16 2A 8C 26
