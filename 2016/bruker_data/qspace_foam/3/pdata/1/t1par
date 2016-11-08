@@ -1,0 +1,46 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 80	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= Service
+$$ 2015-10-29 09:45:00.275 +0000  Service@fellbarrow
+$$ /home/Service/data/bdat06/eeh_20151029_1C_5mmHF_foam/3/pdata/1/t1par
+$$ process /opt/topspin3.2/prog/mod/dataserver
+##$BIGDEL= 1000
+##$CALCDN= no
+##$COMPNO= 1
+##$CONV= 1e-05
+##$CURSOR= 1
+##$DRIFT= 5
+##$EDGUESS= 0
+##$EDPARM= 0
+##$FCTTYPE= 9
+##$FIDNUMB= 1
+##$FITT1T2= 0
+##$FITTYPE= 0
+##$GAMM= 4258
+##$GRADIEN= 190
+##$GUESSES= (0..23)
+1 1e-09 1 1 1 1 1 1 1 1 1 1 0.1 1e-10 1 1 1 1 1 1 1 1 1 1
+##$INC= 1
+##$INTRNG= 1
+##$LISTINC= 0.001
+##$LISTTYP= <vdlist>
+##$LITDEL= 10
+##$MAXPNTS= 32
+##$NUMPNTS= 32
+##$NUMTERM= 2
+##$PARM= (0..11)
+1.55374185526631 2.80799627563538e-09 0 0 0 0 0 0 0 0 0 0
+##$PDTYP= <pd>
+##$REGIONS= 1
+##$SHOWINT= yes
+##$SHOWPP= yes
+##$SHOWTXT= 1
+##$START= 1
+##$X_END= 0.000425
+##$X_START= 2.5e-05
+##$Y_END= 3.152582e+08
+##$Y_START= 0
+##END=
